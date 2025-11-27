@@ -20,7 +20,9 @@
       <!-- Section for Display-->
         <section>
             <h3>Display</h3>
-            <p>Description of Display</p>
+            <p>The display property is an important CSS property for controlling layout. It specifies whether an HTML element is treated as a block or an inline element. Every HTML element has a default display value, depending on what type of element it is. The default display value for most elements is block or inline. The display property is used to change the default display behavior of HTML elements.</p>
+            <p>A block-level element ALWAYS starts on a new line and takes up the full width available. An example for elements that have a block display by default are &lt;div&gt;, &lt;h1&gt; - &lt;h6&gt;, &lt;p&gt;, &lt;form&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;section&gt;</p>
+            <p>An inline element DOES NOT start on a new line and only takes up as much width as necessary. These elements will show with inline display by default: &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;img&gt;</p>
             <a href="https://www.codecademy.com/resources/docs/css/display" target="_blank">Codecademy Docs - Display</a>
             <table>
                 <thead>
@@ -32,20 +34,38 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>display</td>
+                        <td rowspan="6">Display</td>
                         <td>block</td>
-                        <td>Element is displayed as a block element.</td>
+                        <td>These are rendered as block-level elements. They create a line break after the element and occupy the full width of their parent container.</td>
                     </tr>
                     <tr>
-                        <td>display</td>
+                        
                         <td>inline</td>
-                        <td>Element is displayed as an inline element.</td>
+                        <td>Elements with display: inline; are rendered as inline elements. They don’t create line breaks and occupy only the necessary width and height based on their content.</td>
                     </tr>
                     <tr>
-                        <td>display</td>
-                        <td>flex</td>
-                        <td>Element is displayed as a flex container.</td>
+                      
+                        <td>inline-block</td>
+                        <td>Elements with display: inline-block; are rendered as inline-level block elements. They behave like inline elements but allow you to set width, height, padding, and margins.</td>
                     </tr>
+                    <tr>
+                        
+                        <td>none</td>
+                        <td>Elements with display: none; are not rendered and are completely hidden from the page. They don’t take up any space in the document flow. It is commonly used with JavaScript to hide or show elements without deleting and recreating them.</td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>flex</td>
+                        <td>Elements with display: flex; create a flex container, allowing you to build flexible and responsive layouts. Flex items inside the container can be positioned and resized using flexbox properties.</td>
+                    </tr>
+                      <tr>
+                        
+                        <td>grid</td>
+                        <td>Elements with display: grid; create a grid container that enables you to define rows and columns, creating a two-dimensional grid system. Child elements inside the container can be placed in specific cells and adjusted for size and alignment.</td>
+                    </tr>
+
+
                 </tbody>
         </section>
       <!-- Section for Position-->
