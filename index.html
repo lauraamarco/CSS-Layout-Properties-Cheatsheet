@@ -45,63 +45,63 @@
             <tr>
               <th>Value</th>
               <th>Description</th>
-              <th>Does it form part of the document flow?</th>
-              <th>Are offset values needed?</th>
+              <th>Added to the element or it's container?</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>block</td>
-              <td>
-                These are rendered as block-level elements. They create a line
-                break after the element and occupy the full width of their
-                parent container.
+              <td><span class="codeText">block</span></td>
+              <td class="tableDescription">
+                They create a line break after the element and occupy the full
+                width of their parent container.
               </td>
+              <td class="tableDescription">Element</td>
             </tr>
             <tr>
-              <td>inline</td>
-              <td>
-                Elements with display: inline; are rendered as inline elements.
+              <td><span class="codeText">inline</span></td>
+              <td class="tableDescription">
                 They don’t create line breaks and occupy only the necessary
                 width and height based on their content.
               </td>
+              <td class="tableDescription">Element</td>
             </tr>
             <tr>
-              <td>inline-block</td>
-              <td>
-                Elements with display: inline-block; are rendered as
-                inline-level block elements. They behave like inline elements
-                but allow you to set width, height, padding, and margins.
+              <td><span class="codeText">inline-block</span></td>
+              <td class="tableDescription">
+                They behave like inline elements but allow you to set width,
+                height, padding, and margins.
               </td>
+              <td class="tableDescription">Element</td>
             </tr>
             <tr>
-              <td>none</td>
-              <td>
-                Elements with display: none; are not rendered and are completely
-                hidden from the page. They don’t take up any space in the
-                document flow. It is commonly used with JavaScript to hide or
-                show elements without deleting and recreating them.
+              <td><span class="codeText">none</span></td>
+              <td class="tableDescription">
+                These elements won't be rendered and are completely hidden from
+                the page. They don’t take up any space in the document flow. It
+                is commonly used with JavaScript to hide or show elements
+                without deleting and recreating them.
               </td>
+              <td class="tableDescription">Element</td>
             </tr>
 
             <tr>
-              <td>flex</td>
-              <td>
-                Elements with display: flex; create a flex container, allowing
-                you to build flexible and responsive layouts. Flex items inside
-                the container can be positioned and resized using flexbox
-                properties.
+              <td><span class="codeText">flex</span></td>
+              <td class="tableDescription">
+                They create a flex container, allowing you to build flexible and
+                responsive layouts. Flex items inside the container can be
+                positioned and resized using flexbox properties.
               </td>
+              <td class="tableDescription">Container</td>
             </tr>
             <tr>
-              <td>grid</td>
-              <td>
-                Elements with display: grid; create a grid container that
-                enables you to define rows and columns, creating a
-                two-dimensional grid system. Child elements inside the container
-                can be placed in specific cells and adjusted for size and
-                alignment.
+              <td><span class="codeText">grid</span></td>
+              <td class="tableDescription">
+                They create a grid container that enables you to define rows and
+                columns, creating a two-dimensional grid system. Child elements
+                inside the container can be placed in specific cells and
+                adjusted for size and alignment.
               </td>
+              <td class="tableDescription">Container</td>
             </tr>
           </tbody>
         </table>

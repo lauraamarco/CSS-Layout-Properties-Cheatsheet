@@ -70,7 +70,7 @@ h3 {
 
 table {
   width: 100%;
-  margin: 20px auto;
+  margin: 20px auto 60px auto;
   border-collapse: collapse;
 }
 
@@ -83,8 +83,13 @@ table th {
 }
 
 table td {
-  padding: 12px;
+  padding: 8px;
   border-bottom: 1px solid #ddd;
+}
+
+.tableDescription {
+  text-align: justify;
+  font-size: smaller;
 }
 
 /* Apply hover background to cells except those marked with .tableProperty */
@@ -114,4 +119,27 @@ ul {
   font-family: "Courier New", monospace;
   font-size: 0.95em;
   font-weight: 600;
+}
+
+/* Center checkbox visuals in table cells */
+.cell-center {
+  text-align: center;
+  vertical-align: middle;
+  width: 6ch;
+}
+
+/* Visual, non-interactive checkbox appearance */
+.vis-check {
+  display: inline-block;
+  font-size: 1.05rem;
+  line-height: 1;
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+}
+.vis-check.yes {
+  color: #2b6cb0; /* blue tick */
+}
+.vis-check.no {
+  color: #999; /* grey empty box */
 }
