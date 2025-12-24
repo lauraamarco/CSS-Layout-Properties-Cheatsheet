@@ -5,77 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Layout CSS properties Cheatsheet -</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yuji+Syuku&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yuji+Syuku&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-  <header>
-  <h1>My CSS spreadsheet:<span class="titleDefinition">Layout properties</span></h1>
-  <h2>Struggling with layout CSS? <span class="boldh2">You’re in the right place.</span></h2>
-  <nav>
-    <a class="navElement"  href="/html/">DISPLAY</a> |
-    <a class="navElement" href="/css/">POSITION</a> |
-    <a class="navElement" href="/js/">FLOAT</a> 
-  </nav>
-</header>
+    <header>
+      <h1>
+        My CSS spreadsheet:<span class="titleDefinition"
+          >Layout properties</span
+        >
+      </h1>
+      <h2>
+        Struggling with layout CSS?
+        <span class="boldh2">You’re in the right place.</span>
+      </h2>
+      <nav>
+        <a class="navElement" href="/html/">DISPLAY</a> |
+        <a class="navElement" href="/css/">POSITION</a> |
+        <a class="navElement" href="/js/">FLOAT</a>
+      </nav>
+    </header>
 
     <main>
       <!-- Section for Display-->
-        <section>
-            <h3>Display</h3>
-            <p>Display specifies whether an HTML element is treated as a block or an inline element. </br> HTML element has a default display value, depending on what type of element it is. The default display value for most elements is <span class="codeText"> block</span> or <span class="codeText"> inline</span> . The display property is used to change the default display behavior of HTML elements.</p>
-            <ul>
-                <li>A block-level element <strong>always</strong> starts on a new line and takes up the full width available. </li> 
-                  <li class="liIndent">Some examples for elements that have a block display by default are <span class="codeText">&lt;div&gt;</span>, <span class="codeText">&lt;h1&gt;</span> - <span class="codeText">&lt;h6&gt;</span>, <span class="codeText">&lt;p&gt;</span>, <span class="codeText">&lt;form&gt;</span>, <span class="codeText">&lt;header&gt;</span>, <span class="codeText">&lt;footer&gt;</span>, <span class="codeText">&lt;section&gt;</span>.</li>
-                <li>An inline element <strong>does not</strong> start on a new line and only takes up as much width as necessary. </li> 
-                 <li class="liIndent"> These elements will show with inline display by default: <span class="codeText">&lt;span&gt;</span>, <span class="codeText">&lt;a&gt;</span>, <span class="codeText">&lt;strong&gt;</span>, <span class="codeText">&lt;em&gt;</span>, <span class="codeText">&lt;img&gt;</span>.</li>
-            </ul>
-            <div class="reference"> For more details on the Display property see here: <a href="https://www.codecademy.com/resources/docs/css/display" target="_blank">Codecademy Docs - Display.</a> </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Property</th>
-                        <th>Value</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="6" class="tableProperty">Display</td>
-                        <td>block</td>
-                        <td>These are rendered as block-level elements. They create a line break after the element and occupy the full width of their parent container.</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>inline</td>
-                        <td>Elements with display: inline; are rendered as inline elements. They don’t create line breaks and occupy only the necessary width and height based on their content.</td>
-                    </tr>
-                    <tr>
-                      
-                        <td>inline-block</td>
-                        <td>Elements with display: inline-block; are rendered as inline-level block elements. They behave like inline elements but allow you to set width, height, padding, and margins.</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>none</td>
-                        <td>Elements with display: none; are not rendered and are completely hidden from the page. They don’t take up any space in the document flow. It is commonly used with JavaScript to hide or show elements without deleting and recreating them.</td>
-                    </tr>
+      <section>
+        <h3>Display</h3>
+        <div class="elementDescription">
+          The Display element specifies whether an HTML element is treated as a
+          block or an inline element. It determines the layout behavior of an
+          element and how it interacts with other elements around it.
+        </div>
+        <div>Here are some common values for the display property:</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Description</th>
+              <th>Does it form part of the document flow?</th>
+              <th>Are offset values needed?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>block</td>
+              <td>
+                These are rendered as block-level elements. They create a line
+                break after the element and occupy the full width of their
+                parent container.
+              </td>
+            </tr>
+            <tr>
+              <td>inline</td>
+              <td>
+                Elements with display: inline; are rendered as inline elements.
+                They don’t create line breaks and occupy only the necessary
+                width and height based on their content.
+              </td>
+            </tr>
+            <tr>
+              <td>inline-block</td>
+              <td>
+                Elements with display: inline-block; are rendered as
+                inline-level block elements. They behave like inline elements
+                but allow you to set width, height, padding, and margins.
+              </td>
+            </tr>
+            <tr>
+              <td>none</td>
+              <td>
+                Elements with display: none; are not rendered and are completely
+                hidden from the page. They don’t take up any space in the
+                document flow. It is commonly used with JavaScript to hide or
+                show elements without deleting and recreating them.
+              </td>
+            </tr>
 
-                    <tr>
-                        
-                        <td>flex</td>
-                        <td>Elements with display: flex; create a flex container, allowing you to build flexible and responsive layouts. Flex items inside the container can be positioned and resized using flexbox properties.</td>
-                    </tr>
-                      <tr>
-                        
-                        <td>grid</td>
-                        <td>Elements with display: grid; create a grid container that enables you to define rows and columns, creating a two-dimensional grid system. Child elements inside the container can be placed in specific cells and adjusted for size and alignment.</td>
-                    </tr>
+            <tr>
+              <td>flex</td>
+              <td>
+                Elements with display: flex; create a flex container, allowing
+                you to build flexible and responsive layouts. Flex items inside
+                the container can be positioned and resized using flexbox
+                properties.
+              </td>
+            </tr>
+            <tr>
+              <td>grid</td>
+              <td>
+                Elements with display: grid; create a grid container that
+                enables you to define rows and columns, creating a
+                two-dimensional grid system. Child elements inside the container
+                can be placed in specific cells and adjusted for size and
+                alignment.
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-
-                </tbody>
-        </section>
+        <div>
+          HTML element has a default display value, depending on what type of
+          element it is. The default display value for most elements is
+          <span class="codeText"> block</span> or
+          <span class="codeText"> inline</span> . The display property is used
+          to change the default display behavior of HTML elements.
+        </div>
+        <ul>
+          <li>
+            A block-level element <strong>always</strong> starts on a new line
+            and takes up the full width available.
+          </li>
+          <li class="liIndent">
+            Some examples for elements that have a block display by default are
+            <span class="codeText">&lt;div&gt;</span>,
+            <span class="codeText">&lt;h1&gt;</span> -
+            <span class="codeText">&lt;h6&gt;</span>,
+            <span class="codeText">&lt;p&gt;</span>,
+            <span class="codeText">&lt;form&gt;</span>,
+            <span class="codeText">&lt;header&gt;</span>,
+            <span class="codeText">&lt;footer&gt;</span>,
+            <span class="codeText">&lt;section&gt;</span>.
+          </li>
+          <li>
+            An inline element <strong>does not</strong> start on a new line and
+            only takes up as much width as necessary.
+          </li>
+          <li class="liIndent">
+            These elements will show with inline display by default:
+            <span class="codeText">&lt;span&gt;</span>,
+            <span class="codeText">&lt;a&gt;</span>,
+            <span class="codeText">&lt;strong&gt;</span>,
+            <span class="codeText">&lt;em&gt;</span>,
+            <span class="codeText">&lt;img&gt;</span>.
+          </li>
+        </ul>
+        <div class="reference">
+          For more details on the Display property see here:
+          <a
+            href="https://www.codecademy.com/resources/docs/css/display"
+            target="_blank"
+            >Codecademy Docs - Display.</a
+          >
+        </div>
+      </section>
       <!-- Section for Position-->
 
       <!-- Section for Float-->
