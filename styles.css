@@ -7,7 +7,6 @@ body {
   background-color: white;
   min-width: 360px; /* Ensures readability on small devices */
 }
-
 /*Title Styles*/
 
 h1 {
@@ -192,6 +191,31 @@ ul {
 
 a {
   color: #1d4e4d;
+}
+/* Back to top button styles */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  /* Styling */
+  background-color: #35495e;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px; /* Makes it look like a pill/button */
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+
+  /* Shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  /* Animation for hover */
+  z-index: 9999; /* Ensure it's above everything else */
+}
+
+.back-to-top:hover {
+  background-color: #527e7f; /* Your accent color */
 }
 
 .footerContent {
