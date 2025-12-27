@@ -193,3 +193,22 @@ ul {
 a {
   color: #1d4e4d;
 }
+
+.footerContent {
+  background-color: #4b6c6dd0;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aFooter {
+  text-decoration: none;
+  color: #42b883;
+}
+.aFooter:hover {
+  color: #ff7e67;
+}
