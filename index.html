@@ -13,27 +13,25 @@
     />
   </head>
   <body>
-    <header>
-      <h1>
-        My CSS spreadsheet:<span class="titleDefinition"
-          >Layout properties</span
-        >
-      </h1>
-      <h2>
-        Struggling with layout CSS?
-        <span class="boldh2">You’re in the right place.</span>
-      </h2>
-      <nav>
-        <a class="navElement" href="/html/">DISPLAY</a> |
-        <a class="navElement" href="/css/">POSITION</a> |
-        <a class="navElement" href="/js/">FLOATS</a> |
-        <a class="navElement" href="/js/">BOX MODEL</a>
-      </nav>
-    </header>
+    <!-- Title Section -->
+    <h1>
+      My CSS spreadsheet:<span class="titleDefinition">Layout properties</span>
+    </h1>
+    <h2>
+      Struggling with layout CSS?
+      <span class="boldh2">You’re in the right place.</span>
+    </h2>
+    <!-- Navigation Section -->
+    <nav class="navigationContainer">
+      <a class="navElement" href="#display">DISPLAY</a> |
+      <a class="navElement" href="#position">POSITION</a> |
+      <a class="navElement" href="#floats">FLOATS</a> |
+      <a class="navElement" href="#box-model">BOX MODEL</a>
+    </nav>
 
     <main>
       <!-- Section for Display-->
-      <section class="sectionDisplay">
+      <section class="sectionDisplay" id="display">
         <h3>Display</h3>
         <div class="elementDescription">
           The Display element specifies whether an HTML element is treated as a
@@ -178,7 +176,7 @@
         </div>
       </section>
       <!-- Section for Position-->
-      <section class="sectionPosition">
+      <section class="sectionPosition" id="position">
         <h3>Position</h3>
         <div class="elementDescription">
           The position property defines how elements are placed within the
@@ -273,7 +271,7 @@
       </section>
 
       <!-- Section for Float-->
-      <section class="sectionFloat">
+      <section class="sectionFloat" id="floats">
         <h3>Floats</h3>
         <div class="elementDescription">
           The float property moves an element to the left or right within its
@@ -367,7 +365,7 @@
       </section>
 
       <!-- Section for Box model -->
-      <section class="sectionBoxModel">
+      <section class="sectionBoxModel" id="box-model">
         <h3>Box model</h3>
         <div class="elementDescription">
           The CSS box model describes how every element is represented as a

@@ -1,3 +1,8 @@
+/* Smooth scrolling for anchor links in the <nav> */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
 }
@@ -32,19 +37,25 @@ h2 {
 .boldh2 {
   font-weight: 900;
 }
-
-nav {
+/*NAVIGATION STYLES*/
+.navigationContainer {
   font-family: Montserrat, monospace;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  border-top: 1px solid #e6e6e6;
-  padding-top: 20px;
-  /* add a thin separator line below the nav and reduce bottom space */
-  border-bottom: 1px solid #e6e6e6;
-  padding-bottom: 20px;
   margin: 0px auto 24px auto;
   width: 70%;
+  /* Adding thin separators line above and under the nav */
+  border-top: 1px solid #e6e6e6;
+  padding-top: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 20px;
+
+  /* Make the nav stick to the top when scrolling */
+  position: sticky;
+  top: 0px;
+  background: white; /* ensure it covers content underneath */
+  z-index: 1000;
 }
 .navElement {
   text-decoration: none;
@@ -63,7 +74,9 @@ main {
 }
 
 section {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  /* Prevent section headings from being hidden behind the sticky nav */
+  scroll-margin-top: 90px; /* adjust if nav height changes */
 }
 
 h3 {
