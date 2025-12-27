@@ -26,13 +26,14 @@
       <nav>
         <a class="navElement" href="/html/">DISPLAY</a> |
         <a class="navElement" href="/css/">POSITION</a> |
-        <a class="navElement" href="/js/">FLOAT</a>
+        <a class="navElement" href="/js/">FLOATS</a> |
+        <a class="navElement" href="/js/">BOX MODEL</a>
       </nav>
     </header>
 
     <main>
       <!-- Section for Display-->
-      <section>
+      <section class="sectionDisplay">
         <h3>Display</h3>
         <div class="elementDescription">
           The Display element specifies whether an HTML element is treated as a
@@ -89,7 +90,19 @@
               <td class="tableDescription">
                 They create a flex container, allowing you to build flexible and
                 responsive layouts. Flex items inside the container can be
-                positioned and resized using flexbox properties.
+                positioned and resized using flexbox properties. More about CSS
+                flexbox properties
+                <a
+                  href="https://www.codecademy.com/resources/docs/css/flexbox"
+                  target="_blank"
+                  >here (Codecademy)</a
+                >
+                and
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts"
+                  target="_blank"
+                  >here (MDN Docs).</a
+                >
               </td>
               <td class="tableDescription">Container</td>
             </tr>
@@ -99,7 +112,18 @@
                 They create a grid container that enables you to define rows and
                 columns, creating a two-dimensional grid system. Child elements
                 inside the container can be placed in specific cells and
-                adjusted for size and alignment.
+                adjusted for size and alignment. More about CSS grid properties
+                <a
+                  href="https://www.codecademy.com/resources/docs/css/grids"
+                  target="_blank"
+                  >here (Codecademy)</a
+                >
+                and
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Basic_concepts"
+                  target="_blank"
+                  >here (MDN Docs).</a
+                >
               </td>
               <td class="tableDescription">Container</td>
             </tr>
@@ -152,8 +176,268 @@
         </div>
       </section>
       <!-- Section for Position-->
+      <section class="sectionPosition">
+        <h3>Position</h3>
+        <div class="elementDescription">
+          The position property defines how elements are placed within the
+          document.
+        </div>
+        <div>Here are some common values for the position property:</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Description</th>
+              <th>Remains in the normal document flow?</th>
+              <th>Needs offset properties (top, right, bottom, left)?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="codeText">static</span></td>
+              <td class="tableDescription">
+                Default value. The element appears in the actual location where
+                it’s located in the markup.The offset properties or the z-index
+                have no effect.
+              </td>
+              <td class="tableDescription">Yes</td>
+              <td class="tableDescription">No</td>
+            </tr>
+            <tr>
+              <td><span class="codeText">relative</span></td>
+              <td class="tableDescription">
+                The element does not change positions unless you add position
+                properties (top, right...). It also creates a reference position
+                for absolute positioned child elements.
+              </td>
+              <td class="tableDescription">Yes</td>
+              <td class="tableDescription">Yes</td>
+            </tr>
+            <tr>
+              <td><span class="codeText">absolute</span></td>
+              <td class="tableDescription">
+                The element is partially removed from the document flow and it’s
+                positioned in relation to its closest relative positioned
+                ancestor element. No space is created for the element in the
+                page layout. The margins of absolutely positioned boxes do not
+                collapse with other margins.
+              </td>
+              <td class="tableDescription">No</td>
+              <td class="tableDescription">Yes</td>
+            </tr>
+            <tr>
+              <td><span class="codeText">fixed</span></td>
+              <td class="tableDescription">
+                It is removed from the document flow just like the above.
+                However, unlike the absolute positioned elements, which are
+                relative to an ancestor element, the fixed elements are always
+                relative to the document (which is the viewport in the case of
+                visual media).
+              </td>
+              <td class="tableDescription">No</td>
+              <td class="tableDescription">Yes</td>
+            </tr>
+
+            <tr>
+              <td><span class="codeText">sticky</span></td>
+              <td class="tableDescription">
+                This value is a mix between the relative and fixed positions.
+                The element is treated as relative until a specific point or
+                threshold is met, at which point the element is then treated as
+                fixed.
+              </td>
+              <td class="tableDescription">Yes/No</td>
+              <td class="tableDescription">Yes</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="reference">
+          For more details on the Position property see here:
+          <a
+            href="https://www.codecademy.com/resources/docs/css/position"
+            target="_blank"
+            >Codecademy Docs - Position</a
+          >
+          and
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position"
+            target="_blank"
+            >MDN Docs - Position.</a
+          >
+        </div>
+      </section>
 
       <!-- Section for Float-->
+      <section class="sectionFloat">
+        <h3>Floats</h3>
+        <div class="elementDescription">
+          The float property moves an element to the left or right within its
+          containing element, outside of the default positioning (determined by
+          Position properties).
+        </div>
+        <div>Here are some common values for the float property:</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="codeText">left</span></td>
+              <td class="tableDescription">
+                Makes the element float on the left of its container.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="codeText">right</span></td>
+              <td class="tableDescription">
+                Makes the element float on the right of its container.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="codeText">none</span></td>
+              <td class="tableDescription">
+                The element does not float and remains in the normal document
+                flow.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="codeText">inline-start</span></td>
+              <td class="tableDescription">
+                The element must float on the start side of its containing
+                block. That is the left side with ltr scripts, and the right
+                side with rtl scripts.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="codeText">inline-end</span></td>
+              <td class="tableDescription">
+                The element must float on the end side of its containing block.
+                That is the right side with ltr scripts, and the left side with
+                rtl scripts.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          This property is commonly used for wrapping text around an image;
+          however, for layout tasks it's often better to use CSS Grid or
+          Flexbox.
+          <ul>
+            <li>
+              Float can only be applied to elements whose position is static or
+              relative.
+            </li>
+            <li>
+              Floated elements are removed from the normal document flow, so
+              other elements behave as if the floated element isn't there.
+              Floated items usually need an explicit width; otherwise they can
+              expand to the full width of their container.
+            </li>
+            <li>
+              When an element is floated, surrounding content (text and inline
+              elements) will wrap around it. To prevent wrapping you can use the
+              <span class="codeText">clear</span> property on following
+              elements.
+            </li>
+          </ul>
+        </div>
+
+        <div class="reference">
+          For more details on the Position property see here:
+          <a
+            href="https://www.codecademy.com/resources/docs/css/floats"
+            target="_blank"
+            >Codecademy Docs - Floats</a
+          >
+          and
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position"
+            target="_blank"
+            >MDN Docs - Position.</a
+          >
+        </div>
+      </section>
+
+      <!-- Section for Box model -->
+      <section class="sectionBoxModel">
+        <h3>Box model</h3>
+        <div class="elementDescription">
+          The CSS box model describes how every element is represented as a
+          rectangular box: content, padding, border and margin. Understanding
+          the box model is key to controlling spacing and sizing.
+        </div>
+        <div>Common parts of the box model:</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Part</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="codeText">content</span></td>
+              <td class="tableDescription">
+                The area where text and images appear. Its size is controlled by
+                the element's <span class="codeText">width</span> and
+                <span class="codeText">height</span> (unless box-sizing
+                applies).
+              </td>
+            </tr>
+            <tr>
+              <td><span class="codeText">padding</span></td>
+              <td class="tableDescription">
+                Space between content and border. Padding increases the
+                element's inner spacing and (depending on box-sizing) can affect
+                total size. Use this to create space inside an element.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="codeText">border</span></td>
+              <td class="tableDescription">
+                The line surrounding padding and content. Border width and style
+                contribute to the element's visual size unless using
+                <span class="codeText">box-sizing: border-box</span>.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="codeText">margin</span></td>
+              <td class="tableDescription">
+                The outermost space between the element and its neighbors.
+                Margins are transparent and do not have a background color. Use
+                this to create space outside an element.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div>
+          Note: using <span class="codeText">box-sizing: border-box</span> makes
+          the <span class="codeText">width</span> and
+          <span class="codeText">height</span>
+          include padding and border, which often simplifies layout
+          calculations.
+        </div>
+
+        <div class="reference">
+          For more on the box model see the
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model/Introduction"
+            target="_blank"
+            >MDN Box Model</a
+          >
+          or
+          <a
+            href="https://www.codecademy.com/resources/docs/css/box-model"
+            target="_blank"
+            >Codecademy Box Model.</a
+          >
+        </div>
+      </section>
     </main>
   </body>
 </html>
