@@ -8,6 +8,8 @@ body {
   min-width: 360px; /* Ensures readability on small devices */
 }
 
+/*Title Styles*/
+
 h1 {
   font-family: "Major Mono Display", monospace;
   font-size: 50px;
@@ -15,6 +17,35 @@ h1 {
   font-style: normal;
   margin: 40px auto;
   width: 80%;
+  color: #004445;
+}
+
+.css-wrapper {
+  position: relative;
+  display: inline-block; /* Keeps the wrapper tight around the words */
+  margin-right: 20px; /* Optional: adds a little space before "spreadsheet" */
+}
+
+.originalCSS {
+  color: #35495e;
+  position: relative; /* Stays in the flow to push "spreadsheet" correctly */
+  z-index: 3;
+}
+
+.secondCSS {
+  color: #ff7e67;
+  position: absolute; /* Pulls it out of the flow so it takes 0px space */
+  left: 10px; /* Move it 10px to the right of the original */
+  top: 0;
+  z-index: 2;
+}
+
+.thirdCSS {
+  color: #42b883;
+  position: absolute; /* Pulls it out of the flow */
+  left: 22px; /* Move it 20px to the right of the original */
+  top: 0;
+  z-index: 1;
 }
 
 /* Second line of the h1 in italics */
@@ -60,8 +91,15 @@ h2 {
 }
 .navElement {
   text-decoration: none;
-  color: black;
+  color: #004445;
   padding: 0 40px;
+}
+
+.navElement:hover {
+  color: #42b883;
+  /* Instead of font-size: 24px, we use scale so the rest around it doesn't move */
+  transform: scale(1.2); /* 1.2 means 120% of original size */
+  display: inline-block; /* Ensures transform works correctly as it doesn't work in elements that are "inline" like span or a*/
 }
 
 main {
@@ -83,6 +121,7 @@ section {
 h3 {
   font-size: 25px;
   letter-spacing: 3px;
+  color: #004445;
 }
 
 .elementDescription {
@@ -97,7 +136,7 @@ table {
 }
 
 table th {
-  background-color: #333;
+  background-color: #2a5253d9;
   color: white;
   padding: 12px;
   text-align: left;
@@ -143,7 +182,7 @@ ul {
 /* Custom code styling */
 .codeText {
   background-color: #f0f0f0;
-  color: #d63384;
+  color: #ff7e67;
   padding: 4px 8px;
   border-radius: 4px;
   font-family: "Courier New", monospace;
@@ -151,25 +190,6 @@ ul {
   font-weight: 600;
 }
 
-/* Center checkbox visuals in table cells */
-.cell-center {
-  text-align: center;
-  vertical-align: middle;
-  width: 6ch;
-}
-
-/* Visual, non-interactive checkbox appearance */
-.vis-check {
-  display: inline-block;
-  font-size: 1.05rem;
-  line-height: 1;
-  width: 1.2em;
-  height: 1.2em;
-  text-align: center;
-}
-.vis-check.yes {
-  color: #2b6cb0; /* blue tick */
-}
-.vis-check.no {
-  color: #999; /* grey empty box */
+a {
+  color: #1d4e4d;
 }
