@@ -5,6 +5,7 @@ html {
 
 body {
   background-color: white;
+  min-width: 360px; /* Ensures readability on small devices */
 }
 
 h1 {
