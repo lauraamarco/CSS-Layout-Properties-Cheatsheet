@@ -46,7 +46,9 @@
             <tr>
               <th>Value</th>
               <th>Description</th>
-              <th>Added to the element or it's container?</th>
+              <th class="col-narrow">
+                Added to the element or it's container?
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -56,7 +58,7 @@
                 They create a line break after the element and occupy the full
                 width of their parent container.
               </td>
-              <td class="tableDescription">Element</td>
+              <td class="tableDescription col-narrow">Element</td>
             </tr>
             <tr>
               <td><span class="codeText">inline</span></td>
@@ -64,7 +66,7 @@
                 They don’t create line breaks and occupy only the necessary
                 width and height based on their content.
               </td>
-              <td class="tableDescription">Element</td>
+              <td class="tableDescription col-narrow">Element</td>
             </tr>
             <tr>
               <td><span class="codeText">inline-block</span></td>
@@ -72,7 +74,7 @@
                 They behave like inline elements but allow you to set width,
                 height, padding, and margins.
               </td>
-              <td class="tableDescription">Element</td>
+              <td class="tableDescription col-narrow">Element</td>
             </tr>
             <tr>
               <td><span class="codeText">none</span></td>
@@ -82,7 +84,7 @@
                 is commonly used with JavaScript to hide or show elements
                 without deleting and recreating them.
               </td>
-              <td class="tableDescription">Element</td>
+              <td class="tableDescription col-narrow">Element</td>
             </tr>
 
             <tr>
@@ -104,7 +106,7 @@
                   >here (MDN Docs).</a
                 >
               </td>
-              <td class="tableDescription">Container</td>
+              <td class="tableDescription col-narrow">Container</td>
             </tr>
             <tr>
               <td><span class="codeText">grid</span></td>
@@ -125,7 +127,7 @@
                   >here (MDN Docs).</a
                 >
               </td>
-              <td class="tableDescription">Container</td>
+              <td class="tableDescription col-narrow">Container</td>
             </tr>
           </tbody>
         </table>
@@ -188,8 +190,10 @@
             <tr>
               <th>Value</th>
               <th>Description</th>
-              <th>Remains in the normal document flow?</th>
-              <th>Needs offset properties (top, right, bottom, left)?</th>
+              <th class="col-narrow">Remains in the normal document flow?</th>
+              <th class="col-narrow">
+                Needs offset properties (top, right, bottom, left)?
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -200,8 +204,8 @@
                 it’s located in the markup.The offset properties or the z-index
                 have no effect.
               </td>
-              <td class="tableDescription">Yes</td>
-              <td class="tableDescription">No</td>
+              <td class="tableDescription col-narrow">Yes</td>
+              <td class="tableDescription col-narrow">No</td>
             </tr>
             <tr>
               <td><span class="codeText">relative</span></td>
@@ -210,8 +214,8 @@
                 properties (top, right...). It also creates a reference position
                 for absolute positioned child elements.
               </td>
-              <td class="tableDescription">Yes</td>
-              <td class="tableDescription">Yes</td>
+              <td class="tableDescription col-narrow">Yes</td>
+              <td class="tableDescription col-narrow">Yes</td>
             </tr>
             <tr>
               <td><span class="codeText">absolute</span></td>
@@ -222,8 +226,8 @@
                 page layout. The margins of absolutely positioned boxes do not
                 collapse with other margins.
               </td>
-              <td class="tableDescription">No</td>
-              <td class="tableDescription">Yes</td>
+              <td class="tableDescription col-narrow">No</td>
+              <td class="tableDescription col-narrow">Yes</td>
             </tr>
             <tr>
               <td><span class="codeText">fixed</span></td>
@@ -234,8 +238,8 @@
                 relative to the document (which is the viewport in the case of
                 visual media).
               </td>
-              <td class="tableDescription">No</td>
-              <td class="tableDescription">Yes</td>
+              <td class="tableDescription col-narrow">No</td>
+              <td class="tableDescription col-narrow">Yes</td>
             </tr>
 
             <tr>
@@ -246,8 +250,8 @@
                 threshold is met, at which point the element is then treated as
                 fixed.
               </td>
-              <td class="tableDescription">Yes/No</td>
-              <td class="tableDescription">Yes</td>
+              <td class="tableDescription col-narrow">Yes/No</td>
+              <td class="tableDescription col-narrow">Yes</td>
             </tr>
           </tbody>
         </table>

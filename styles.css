@@ -95,6 +95,14 @@ table td {
   font-size: smaller;
 }
 
+/* Narrow column class: fixed width, prevent header wrapping and show ellipsis */
+.col-narrow {
+  width: 7rem; /* adjust this value to taste (e.g. 7rem, 8rem) */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
 /* Apply hover background to cells except those marked with .tableProperty */
 table tr:hover td:not(.tableProperty) {
   background-color: #f5f5f5;
